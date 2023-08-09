@@ -61,7 +61,7 @@ const Result = ({ data }) => {
   const { homeValue, loanAmount, loanTerm, interestRate } = data;
 
   const totalLoanMonths = loanTerm * 12;
-  const interestPerMonth = interestRate / (100 / 12);
+  const interestPerMonth = interestRate / 100 / 12;
 
   const monthlyPayment =
     (loanAmount *
@@ -85,7 +85,7 @@ const Result = ({ data }) => {
   };
 
   return (
-    <Stack>
+    <Stack gap={3}>
       <Typography textAlign="center" variant="h5">
         Monthly Payment: ${monthlyPayment.toFixed(2)}
       </Typography>

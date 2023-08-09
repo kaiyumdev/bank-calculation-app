@@ -18,7 +18,7 @@ function App() {
     <div>
       <Navbar> </Navbar>
       <Container maxWidth="xl" sx={{ mt: 4 }}>
-        <Grid container spacing={5}>
+        <Grid container spacing={5} alignItems="center">
           <Grid item xs={12} md={6}>
             <SliderSelect data={data} setData={setData}></SliderSelect>
             <TenureSelect data={data} setData={setData}></TenureSelect>
